@@ -2,16 +2,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className = 'whole-thang'>
-      <div className="center-content">
+    <div className = 'flex justify-center items-center h-screen '>
+      <div className="bg-brown-neutral">
         <h1>Food Journal</h1>
         <div>
           <form action="">
             <label htmlFor="meal">What did you eat? 
-              <input type="text" />
+              <input type="text" placeholder="Describe meal" className = 'border-2 border-green-dark'/>
             </label>
           </form>
-
+ 
           <label htmlFor="">
               Diet ?  
               <select >
@@ -24,19 +24,18 @@ function App() {
                 <option value="Vegetarian">Vegetarian</option>
               </select>    
           </label>
-
-            <label htmlFor="">
+        </div>
+        <label htmlFor="">
               Dairy ? 
-              <input type="radio" value="No" name="option"/> No
-              <input type="radio" value="Yes" name="option"/> Yes
+              <input type="radio" value="No" name="dairy"/> No
+              <input type="radio" value="Yes" name="dairy"/> Yes
             </label>
 
             <label htmlFor="">
               Spicy ?
-              <input type="radio" value="No" name="option"/> No
-              <input type="radio" value="Yes" name="option"/> Yes
+              <input type="radio" value="No" name="spicy"/> No
+              <input type="radio" value="Yes" name="spicy"/> Yes
             </label>
-        </div>
         </div>
       
     </div>
